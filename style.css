@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+::selection{
+  color: #000;
+  background: #fff;
+}
+nav{
+  position: fixed;
+  background: #2648d1; /* Updated color */
+  width: 100%;
+  padding: 10px 0;
+  z-index: 12;
+}
+nav .menu{
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.menu .logo a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+.menu ul{
+  display: inline-flex;
+}
+.menu ul li{
+  list-style: none;
+  margin-left: 7px;
+}
+.menu ul li:first-child{
+  margin-left: 0px;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.menu ul li a:hover{
+  background: #fff;
+  color: black;
+}
+.img{
+  background: url('img3.jpg')no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.img::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.center{
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+.center .title{
+  color: #fff;
+  font-size: 55px;
+  font-weight: 600;
+  height: 70px; /* Fixed height to prevent layout shift */
+}
+.center .sub_title{
+  color: #fff;
+  font-size: 52px;
+  font-weight: 600;
+}
+.center .btns{
+  margin-top: 20px;
+}
+.center .btns .btn{
+  display: inline-block;
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 10px;
+  border: 2px solid white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: #fff;
+  background: none;
+}
+.center .btns .btn:hover{
+  background: white;
+  color: black;
+}
+
+/* About Me Section */
+#about {
+  padding: 50px 20px;
+  text-align: center;
+}
+#about .container {
+  max-width: 800px;
+  margin: auto;
+}
+#about .profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+#about p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Portfolio Section */
+#portfolio {
+  background-image: url('website_Wallpaper.png');
+  padding: 50px 20px;
+  text-align: center;
+}
+#portfolio .container {
+  max-width: 1000px;
+  margin: auto;
+}
+#portfolio .project {
+  margin-bottom: 40px;
+}
+#portfolio .project img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+#portfolio .project h3 {
+  font-size: 24px;
+  margin: 20px 0 10px;
+}
+#portfolio .project .description {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+#portfolio .project .description:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+#portfolio .project .description p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+#portfolio .project .description a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #1b1b1b;
+  text-decoration: none;
+  font-weight: 500;
+}
+#portfolio .project .description a:hover {
+  text-decoration: underline;
+}
+
+/* Resume Section */
+#resume {
+  padding: 50px 20px;
+  text-align: center;
+}
+#resume .container {
+  max-width: 800px;
+  margin: auto;
+}
+#resume a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  color: #fff;
+  background: #1b1b1b;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+#resume a:hover {
+  background: #333;
+}
+
+/* Contact Section */
+#contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+#contact .container {
+  max-width: 800px;
+  margin: auto;
+}
+#contact ul {
+  list-style: none;
+  padding: 0;
+}
+#contact ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+#contact ul li a {
+  color: #1b1b1b;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+#contact ul li a:hover {
+  text-decoration: underline;
+}

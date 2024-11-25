@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Layout | CodingLab</title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  </head>
+<body>
+  <nav>
+    <div class="menu">
+      <div class="logo">
+        <a href="#">CodingLab</a>
+      </div>
+      <ul>
+        <li><a href="#simple-shell">Simple Shell</a></li>
+        <li><a href="#airbnb-clone">Airbnb Clone</a></li>
+        <li><a href="#printf">Printf</a></li>
+        <li><a href="#alvohive">AlvoHive</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="img" style="background-image: url('images/website_wallpaper.png');"></div>
+  <div class="center">
+    <div class="title" id="animated-text"></div>
+    <div class="sub_title">Portfolio</div>
+    <div class="btns">
+      <a href="cv_chloe.pdf" target="_blank" class="btn">View CV</a>
+      <a href="cv_chloe.pdf" download class="btn">Download CV</a>
+    </div>
+  </div>
+
+
+  <!-- About Me Section -->
+  <section id="about">
+    <div class="container">
+      <img src="your-photo.jpg" alt="Your Photo" class="profile-photo">
+      <p>A strong interest in both passive and active discovery, as well as in building, using, and maintaining tools—these are just a few of the reasons I turned to cybersecurity for my studies and career. Cybersecurity is one of the things I enjoy most, which is why I made the switch.</p>
+      <p>In the span of a year, I went from graduating with a Bachelor's degree in English to working in cybersecurity. As I’m writing this, I am currently undertaking an engineering internship with a focus on tooling and security development at Thales, while studying penetration testing and red teaming at Holberton School. While what I’m doing at work and at school are, on many levels, different, I find value in both. At school, I engage in a lot of Capture the Flag (CTF) challenges, which are one of my favorite hobbies. They keep me on edge and constantly challenge me to apply everything I know. And I know that I'll never know enough—there's always more to learn, and that drives me to keep growing and improving.</p>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <div class="project" id="simple-shell">
+        <h3>Simple Shell</h3>
+        <img src="simple_shell_screenshot.jpg" alt="Simple Shell Screenshot">
+        <div class="description">
+          <p>Simple Shell is a simple, custom implementation of a "simple shell" in C, created as part of the Holberton School curriculum. The project includes a set of functions and system calls such as: execve, exit, fflush, fork, free, getline, getpid, isatty, malloc, perror, printf, fprintf, sprintf, putchar, signal, stat, strtok, wait, write</p>
+          <a href="https://github.com/Spacefox95/holbertonschool-simple_shell">GitHub README</a>
+        </div>
+      </div>
+      <div class="project" id="airbnb-clone">
+        <h3>Airbnb Clone</h3>
+        <img src="airbnb_clone_screenshot.jpg" alt="Airbnb Clone Screenshot">
+        <div class="description">
+          <p>Replica of the main features of the Airbnb platform using Python, HTML, CSS, MySQL, and JavaScript.</p>
+          <a href="https://github.com/chloe0524/holbertonschool-AirBnB_clone_v4">GitHub README</a>
+        </div>
+      </div>
+      <div class="project" id="printf">
+        <h3>Printf</h3>
+        <img src="printf_screenshot.jpg" alt="Printf Screenshot">
+        <div class="description">
+          <p>The goal of the Print F project is to recreate the printf function, available in the standard library in the C language. This function allows the display of characters on the user interface.</p>
+          <a href="https://github.com/mistWil/holbertonschool-printf">GitHub README</a>
+        </div>
+      </div>
+      <div class="project" id="alvohive">
+        <h3>AlvoHive</h3>
+        <img src="alvohive_screenshot.jpg" alt="AlvoHive Screenshot">
+        <div class="description">
+          <p>The goal of the AlvoHIve project is to create a tool to extract data gathered during a penetration test and organize it into a document template. It includes charts, an executive summary, and a summary of the Common Vulnerabilities and Exposures (CVEs) identified.</p>
+          <a href="https://github.com/chloe0524/AlvoHive">GitHub README</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <ul>
+        <li><a href="https://github.com/chloe0524">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/chloé-c-774840295">LinkedIn</a></li>
+        <li><a href="https://twitter.com/your_twitter_handle">Twitter</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
