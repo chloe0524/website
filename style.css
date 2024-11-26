@@ -88,9 +88,14 @@ nav .menu{
   font-size: 52px;
   font-weight: 600;
 }
-.center .btns{
+.center .btns {
+  display: flex;
+  justify-content: center; /* Centers buttons horizontally */
+  align-items: center; /* Centers buttons vertically */
   margin-top: 20px;
+  height: 100px; /* Set a fixed height for the container */
 }
+
 .center .btns .btn{
   display: inline-block;
   height: 55px;
@@ -112,6 +117,11 @@ nav .menu{
 .center .btns .btn:hover{
   background: white;
   color: black;
+}
+
+.github-readme {
+  color: blue;
+  font-weight: bold;
 }
 
 /* About Me Section */
